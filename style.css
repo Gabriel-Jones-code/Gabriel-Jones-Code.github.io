@@ -1,0 +1,169 @@
+body {
+    margin: 0;          /*Overrides default*/
+    background-color: #cce2cb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Nav*/
+
+.navButtons {
+    overflow: hidden;   /*Anything outside the boundry will not be shown*/
+    background-color: #b7cfb7;
+    position: fixed;    /*Keeps nav at the top of the page*/
+    top: 0;             /*No space between the top and the nav bar*/
+    left: 0;
+    width: 100%;
+    z-index: 1;         /*Use this instead of <br> to keep content off of nav*/
+}
+
+.navButtons a {
+    color: #000;          /*This is black...*/
+    display: block;         /*Html is a block, so this lets it sit in a block*/
+    position: relative;     /*Relative to the page*/
+    text-align: center;     /*Guess what this does*/
+    padding: 16px;      
+    float: left;            /*Pushes everything to the left*/
+    text-decoration: none;  /*Don't underline this*/
+}
+
+.navButtons img {
+    display: block;
+    float: right;
+    position: absolute;
+    padding-right: 10px;
+    top: 0;
+    right: 0;
+}
+
+.navButtons a:hover {
+    background-color: #97c1a9;
+    transition-duration: .2s;
+    transition: ease-in-out;
+}
+
+.navButtons a.active {
+    background-color: #97c1a9;
+}
+
+.gitlink {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.gitlink img {
+    position: relative;
+    display: block;
+    padding-right: 10px;
+    float: right;
+}
+/*End Nav*/
+
+/*Columns*/
+
+* {                             /*Everything acting like a table is effected*/
+    box-sizing: border-box;     /*Makes a box with a border to put text in*/
+}
+
+.row {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+#about {
+    left: 0;
+    width: 100%;
+}
+
+#git {
+    left: 0;
+    width: 100%;
+}
+
+#git p {
+    margin-top: 100px;
+}
+
+#git h2 {
+    padding-top: 30px;
+}
+
+#cont{
+    display: block;
+    position: relative;
+}
+
+#cont input[type=text] {
+    box-sizing: border-box;
+    margin-left: 37%;
+    margin-bottom: 5px;
+    background-color: #b7cfb7;
+    border: 1px solid #88b388;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 25%;
+}
+
+#cont input[type=submit] {
+    background-color: #FFF;
+    box-sizing: border-box;
+    margin-left: 48%;
+}
+
+.c1 {
+    float: left;
+    width: 50%;
+    height: 500px;      /*Play with this*/
+    margin: 0;
+    background-color: #88b388;
+    text-align: center;
+}
+
+.c1 p {
+    color: #000;
+    padding: 5% 5px 5px 5px;
+    font-size: larger;
+    line-height: 25px;
+}
+
+.c1 img {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+    border: hidden;
+    border-radius: 8px;
+}
+
+.c2 img {
+    display: inline-block;
+    position: relative;
+    height: 480px;
+    width: 480px;
+    margin-top: -9%;
+    overflow: hidden;
+    transition: transform 1.5s;
+}
+
+.c2 img:hover {
+    transform: rotate(360deg);    
+    transition-timing-function: ease-in-out;
+}
+
+
+.c2 {
+    float: left;
+    width: 50%;
+    height: 500px;      /*Play with this*/
+    padding: 5% 5px 5px 5px;       /*makes text look nice*/
+    background-color: #97c1a9;
+    text-align: center;
+}
+
+.c2 p {
+    color: #000;
+    font-size: larger;
+    line-height: 25px;
+}
