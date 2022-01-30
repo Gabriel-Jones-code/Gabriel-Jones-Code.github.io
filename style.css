@@ -91,28 +91,32 @@ body {
     padding-top: 30px;
 }
 
+/*Contact*/
+
 #cont{
     display: block;
     position: relative;
+    float: right;
+    width: 25%;
+    z-index: 9;
 }
 
 #cont input[type=text] {
-    box-sizing: border-box;
-    margin-left: 37%;
+    box-sizing: block;
     margin-bottom: 5px;
     background-color: #b7cfb7;
     border: 1px solid #88b388;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 25%;
+    width: 100%;
 }
 
 #cont input[type=submit] {
     background-color: #FFF;
-    box-sizing: border-box;
-    margin-left: 48%;
+    float: right;
 }
 
+/*Columns*/
 .c1 {
     float: left;
     width: 50%;
@@ -166,4 +170,11 @@ body {
     color: #000;
     font-size: larger;
     line-height: 25px;
+}
+
+footer {
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
