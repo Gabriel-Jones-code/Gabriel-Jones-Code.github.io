@@ -60,11 +60,17 @@
         <div id="cont">
             <br><br>
             <button class='close' onclick='close()'>x</button>
+            <br>
+            <label class='req'>*</label>
             <input type="text" name="firstName" placeholder="First Name">
+            <label class='req'>*</label>
             <input type="text" name="lastName" placeholder="Last Name">
+            <label class='req'>*</label>
             <input type="text" name="email" placeholder="Email">
-            <input type="text" name="message" placeholder="Message"><br>
+            <input class='hide' type="text" name="message" placeholder="Message"><br>
+            <p>* is a required field</p>
             <input type="submit" name="submit">
+            <br>
         </div>
         <div>
             <button class='open' onclick='open()'>Contact</button>
