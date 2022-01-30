@@ -95,9 +95,10 @@ body {
 
 #cont{
     display: block;
-    position: relative;
+    position: sticky;
     float: right;
     width: 25%;
+    bottom: 0;
     z-index: 9;
 }
 
@@ -119,6 +120,25 @@ body {
 .hide{
     margin-top: 20px;
 }
+
+/*open button*/
+
+.openContainer {
+    display: block;
+    position: sticky;
+    bottom: 0;
+    width: 100px;
+    height: 50px;
+}
+
+.open {
+    width: auto;
+    height: auto;
+}
+
+
+
+
 
 /*Columns*/
 .c1 {
@@ -178,7 +198,7 @@ body {
 
 footer {
     text-align: left;
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 0;
 }
