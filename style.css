@@ -106,7 +106,7 @@ body {
     padding: 2px;
     width: 25%;
     height: 300px;
-    bottom: 0;
+    bottom: 20px;
     z-index: 9;
     background-color: #97c1a9;
     box-shadow: 4px 5px 10px black;
@@ -130,9 +130,24 @@ body {
     margin-top: 20px;
 }
 
+/*Input colors*/
+
+.req1 {
+    color: black;
+}
+
+.req2 {
+    color: black;
+}
+
+.req3 {
+    color: black;
+}
+
 /*Close button*/
 
 .close {
+    margin-top: 0;
     background-color: red;
 }
 
@@ -159,6 +174,12 @@ body {
     display: block;
 }
 
+/*Submit Button*/
+
+.submit {
+    bottom : 10px;
+    position: relative;
+}
 
 
 /*Columns*/

@@ -5,7 +5,7 @@
         <meta name="viewport" type="width=device-width">
         <meta name="viewport" type="height=device-height">
         <title>Gabriel's Portfolio</title>
-        <script src='JavaScript/main.js' defer></script>
+        <script src='JavaScript/main.js'></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -61,16 +61,18 @@
             <br><br>
             <button class='close' onclick='closing()'>x</button>
             <br>
-            <label class='req' name='fn'>*</label>
+            <form id='contact' name='cArray'>
+            <label class='req1' name='fn'>*</label>
             <input type="text" name="firstName" placeholder="First Name">
-            <label class='req' name='ln'>*</label>
+            <label class='req2' name='ln'>*</label>
             <input type="text" name="lastName" placeholder="Last Name">
-            <label class='req' name='em'>*</label>
+            <label class='req3' name='em'>*</label>
             <input type="text" name="email" placeholder="Email">
-            <input class='hide' type="text" name="message" placeholder="Message"><br>
+            <input type="text" name="message" placeholder="Message"><br>
             <p>* is a required field</p>
-            <input type="submit" name="submit">
+            <button class='submit' onclick='submits()'>Submit</button>
             <br>
+            </form>
         </div>
         <div class='openContainer'>
             <button id='open' class='open' type='button' onclick='opens()'>Contact</button>
@@ -79,7 +81,7 @@
 
         <!--Footer-->
         <footer>
-            <p style="text-align: right;">&copyVoidGoryo 2022</p>
+            <p style="text-align: right;">&copy;Gabriel Jones 2022</p>
         </footer>
 
     </body>
