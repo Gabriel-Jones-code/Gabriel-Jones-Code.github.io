@@ -5,7 +5,7 @@
         <meta name="viewport" type="width=device-width">
         <meta name="viewport" type="height=device-height">
         <title>Gabriel's Portfolio</title>
-        <script src='JavaScript/main.js'></script>
+        <script src='JavaScript/main.js' defer></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -14,7 +14,7 @@
             <div class="navButtons">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
-                <a onclick='open()'>Contact</a>
+                <a onclick='opens()'>Contact</a>
             </div>
             <div class="gitlink">
                 <a href="https://github.com/Gabriel-Jones-code"><img src="images/icons8-octocat-50.png"></a>
@@ -57,15 +57,15 @@
         <!--End GitHub-->
 
         <!--Contact-->
-        <div id="cont">
+        <div class='cont' id="cont">
             <br><br>
-            <button class='close' onclick='close()'>x</button>
+            <button class='close' onclick='closing()'>x</button>
             <br>
-            <label class='req'>*</label>
+            <label class='req' name='fn'>*</label>
             <input type="text" name="firstName" placeholder="First Name">
-            <label class='req'>*</label>
+            <label class='req' name='ln'>*</label>
             <input type="text" name="lastName" placeholder="Last Name">
-            <label class='req'>*</label>
+            <label class='req' name='em'>*</label>
             <input type="text" name="email" placeholder="Email">
             <input class='hide' type="text" name="message" placeholder="Message"><br>
             <p>* is a required field</p>
@@ -73,7 +73,7 @@
             <br>
         </div>
         <div class='openContainer'>
-            <button class='open' onclick='open()'>Contact</button>
+            <button id='open' class='open' type='button' onclick='opens()'>Contact</button>
         </div>
         <!--End Contact-->
 

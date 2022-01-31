@@ -1,7 +1,9 @@
 body {
     margin: 0;          /*Overrides default*/
+    padding: 0;
     background-color: #cce2cb;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
 /*Nav*/
@@ -93,26 +95,33 @@ body {
 
 /*Contact*/
 
-#cont{
-    display: block;
-    position: sticky;
-    float: right;
-    width: 25%;
-    bottom: 0;
-    z-index: 9;
+#cont {
+    display: none;
 }
 
-#cont input[type=text] {
+.cont{
+    position: sticky;
+    float: right;
+    border: none;
+    padding: 2px;
+    width: 25%;
+    height: 300px;
+    bottom: 0;
+    z-index: 9;
+    background-color: #97c1a9;
+    box-shadow: 4px 5px 10px black;
+}
+
+.cont input[type=text] {
     box-sizing: block;
     margin-bottom: 5px;
     background-color: #b7cfb7;
     border: 1px solid #88b388;
-    padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
 }
 
-#cont input[type=submit] {
+.cont input[type=submit] {
     background-color: #FFF;
     float: right;
 }
@@ -121,22 +130,34 @@ body {
     margin-top: 20px;
 }
 
+/*Close button*/
+
+.close {
+    background-color: red;
+}
+
 /*open button*/
 
 .openContainer {
-    display: block;
     position: sticky;
-    bottom: 0;
+    bottom: 20px;
+    right: 10px;
+    float: right;
     width: 100px;
     height: 50px;
 }
 
 .open {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #b7cfb7;
+    border: none;
+    border-radius: 5px;
 }
 
-
+#open {
+    display: block;
+}
 
 
 
@@ -197,8 +218,9 @@ body {
 }
 
 footer {
+    clear: both;
     text-align: left;
     position: static;
     bottom: 0;
-    left: 0;
+    right: 100vw;
 }
