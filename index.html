@@ -1,88 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" type="width=device-width">
-        <meta name="viewport" type="height=device-height">
+        <meta name="viewport" type="width=device-width, initial-scale=1.0">
         <title>Gabriel's Portfolio</title>
         <script src='JavaScript/main.js'></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-      <!--Nav-->
-        <nav id="home">
-            <div class="navButtons">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a onclick='opens()'>Contact</a>
-            </div>
-            <div class="gitlink">
-                <a href="https://github.com/Gabriel-Jones-code"><img src="images/icons8-octocat-50.png"></a>
-            </div>
-            <br><br>
-            <h2 style="text-align: center;">You may have a fresh start any moment you choose,
-            <br>For this thing we call "failure" is not the falling down,
-            <br>But the staying down.</h2>
-            <p style="text-align: right; margin-right: 15em;"><em>-Mary Pickford</em></p>
+        <!--Nav-->
+        <nav class="navbar" id="home">
+            <a href="">test</a>
+            <a href="">test</a>
+            <a href="">test</a>
+            <a href="">test</a>
         </nav>
         <!--End Nav-->
 
+        <!--Quote-->
+        <div class="quote">
+            <p>You may have a fresh start at any moment you choose,<br> 
+                for this thing we call faliure is not the falling down, but the staying down.</p>
+            <p>-Mary Pickford</p>
+        </div>
+
+
         <!--About-->
-        <div class="row" id="about">
-                <div class="c1">
-                    <img src="images/20211015_221650.jpg">
-                </div>
-                <div class="c2">
-                    <p>Hello! My name is Gabe and welcome to my portfolio.<br><br><br>
-                        I am a student at the Tech Academy and I am currently working on the Software Developer portion of the Boot Camp.
-                        I am very passionate about coding and becoming part of the community, and later becoming part of the industry.<br><br>
-                        I am tremendously excited to be working towards being a Full-Stack Developer, and look forward to work on future projects with you!
-                    </p>
+        <div class="piccon" id="about">
+            <div class="piccir">
+                <img src="images/20211015_221650.jpg">
             </div>
+        </div>
+        <div class="about">
+            <p>Hi! My name is Gabriel Jones and I am a full stack developer in python<br> 
+                and c#. My background in the tech field includes working in IT <br>
+                with multiple clients and graduating from The Tech Academy, <br>
+                a trade school specializing in training full stack developers <br>
+                and introducing their students to the technology industry. <br>
+                I am very passionate about coding and the things I can accomplish <br>
+                through my work. My best work includes the live projects I have done, <br>
+                as well as the final projects I was assigned during my time at my trade school<br>
+                During the live projects, me and a team of developers would work together to create <br>
+                an application in our given deadline</p>
         </div>
         <!--End About-->
 
         <!--GitHub-->
         <div id="git" class="row">
-            <div class="c2">
-                <a href="https://github.com/Gabriel-Jones-code"><img src="images/clipart1799200.png"></a>
-            </div>
-            <div class="c1">
-                <h2>GitHub</h2>
-                <p>You can view all my projects at: </p>
-                <a href="https://github.com/Gabriel-Jones-code">https://github.com/Gabriel-Jones-code</a>
-            </div>
+            
         </div>
 
         <!--End GitHub-->
 
         <!--Contact-->
         <div class='cont' id="cont">
-            <br><br>
-            <button class='close' onclick='closing()'>x</button>
-            <br>
-            <form id='contact' name='cArray'>
-            <label class='req1' name='fn'>*</label>
-            <input type="text" name="firstName" placeholder="First Name">
-            <label class='req2' name='ln'>*</label>
-            <input type="text" name="lastName" placeholder="Last Name">
-            <label class='req3' name='em'>*</label>
-            <input type="text" name="email" placeholder="Email">
-            <input type="text" name="message" placeholder="Message"><br>
-            <p>* is a required field</p>
-            <button class='submit' onclick='submits()'>Submit</button>
-            <br>
-            </form>
+            
         </div>
         <div class='openContainer'>
-            <button id='open' class='open' type='button' onclick='opens()'>Contact</button>
+            
         </div>
         <!--End Contact-->
 
-        <!--Footer-->
-        <footer>
-            <p style="text-align: right;">&copy;Gabriel Jones 2022</p>
+        <footer class="foot">
+            <p>&copy;Gabriel Jones 2022</p>
         </footer>
-
     </body>
 </html>
