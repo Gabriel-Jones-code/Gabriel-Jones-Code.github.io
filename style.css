@@ -45,31 +45,36 @@ body {
 
 .piccon {
     position: relative;
-    display: inline-block;
-    margin-top: 50px;
+    display: block;
+    margin-top: 500px;
     width: 100%;
-    height: 700px;
-    display: inline-block;
+    height: 900px;
 }
 
 .piccir {
+    display: inherit;
     background-color: #004D66;
-    text-align: center;
     border-radius: 500px;
+    text-align: center;
     width: 400px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    overflow: hidden;
+    position: inherit;
+    animation-name: open;
+    animation-duration: 1.5s;
 }
 
-.piccir img{
+.piccon img{
+    display: inherit;
     position: relative;
     max-width: 300px;
     max-height: 300px;
     border-radius: 500px;
-    margin-top: 50px;
+    animation-fill-mode: both;
+    animation-name: open;
+    animation-delay: .1s;
+    animation-duration: 1.5s;
 }
 
 /*text*/
@@ -94,4 +99,39 @@ body {
     color:#E0E2DB;
     font-size: 12px;
     text-align: center;
+}
+
+/*Live projects*/
+
+
+
+/*Animations*/
+
+/*Picture*/
+
+@keyframes open {
+    0%{
+        transform: scale(0,0);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100%{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@keyframes openimg {
+    0%{
+        transform: scale(0,0);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100%{
+        opacity: 1;
+        width: 300px;
+        height: 300px;
+    }
 }
