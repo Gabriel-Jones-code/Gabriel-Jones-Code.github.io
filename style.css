@@ -13,7 +13,7 @@ body {
 .navbar {
     top: 0px;
     padding-top: 15px;
-    background-color: #363537;
+    background-color: #29272b;
     position: sticky;
     color: #E0E2DB;
     width: 100%;
@@ -108,19 +108,7 @@ body {
 }
 /*End Text*/
 
-/*Github*/
-.git {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    float: left;    
-}
-.git iframe{
-    border: none;
-}
 
-
-/*End Github*/
 
 /*footer*/
 .foot {
