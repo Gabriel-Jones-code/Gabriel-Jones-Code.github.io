@@ -1,13 +1,12 @@
 html {
-    margin: 0;          /*Overrides default*/
+    margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
 }
 
 body {
     margin: 0;          /*Overrides default*/
     padding: 0;
+    height: 100vh;
     position: relative;
     background-color: #363537;
     font-family: 'Nunito';
