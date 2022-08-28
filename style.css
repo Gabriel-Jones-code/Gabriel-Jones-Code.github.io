@@ -1,6 +1,7 @@
 body {
     margin: 0;          /*Overrides default*/
     padding: 0;
+    height: 100vh;
     position: relative;
     background-color: #363537;
     font-family: 'Nunito';
