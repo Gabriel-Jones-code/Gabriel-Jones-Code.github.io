@@ -9,7 +9,7 @@ body {
 }
 
 
-/*navbar*/
+/*Navbar*/
 .navbar {
     top: 0px;
     padding-top: 15px;
@@ -28,6 +28,7 @@ body {
     padding: 10px;
     text-decoration: none;
 }
+/*End Navbar*/
 
 /*Quote*/
 .quote {
@@ -36,19 +37,16 @@ body {
     text-align: center;
     font-size: 30px;
 }
-
-
-
-/*About*/
+/*End Quote*/
 
 /*Picture*/
 
 .piccon {
     position: relative;
     display: block;
-    margin-top: 200px;
+    margin-top: 50px;
     width: 100%;
-    height: 900px;
+    height: 100%;
 }
 
 .piccir {
@@ -78,15 +76,51 @@ body {
     animation-delay: .1s;
     animation-duration: 1.5s;
 }
+/*End Picture*/
+
+
+/*About*/
+
+.about {
+    width: 100%; 
+    height: 100%;
+    margin-top: 100px;
+    position: relative;
+    content: "";
+    display: table;
+    clear: both;
+
+}
 
 /*text*/
-.about p{
+.text {
+    width: 50%;
+    height: 100%;
     position: relative;
+    float: left;
+}
+
+.text p{
     color: #E0E2DB;
     text-align: center;
     bottom: 200px;
     font-size: larger;
 }
+/*End Text*/
+
+/*Github*/
+.git {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;    
+}
+.git iframe{
+    border: none;
+}
+
+
+/*End Github*/
 
 /*footer*/
 .foot {
