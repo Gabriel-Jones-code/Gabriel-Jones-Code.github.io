@@ -1,7 +1,6 @@
 body {
     margin: 0;          /*Overrides default*/
     padding: 0;
-    height: 100vh;
     position: relative;
     background-color: #363537;
     font-family: 'Nunito';
@@ -114,7 +113,7 @@ body {
 /*footer*/
 .foot {
     background-color: #29272b;
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
     margin-bottom: 0;
