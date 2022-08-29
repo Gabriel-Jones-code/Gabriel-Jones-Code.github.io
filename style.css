@@ -1,8 +1,7 @@
-body {
+html body {
     margin: 0;          /*Overrides default*/
     padding: 0;
-    width: auto;
-    height: auto;
+    height: 100vh;
     position: relative;
     background-color: #363537;
     font-family: 'Nunito';
@@ -48,7 +47,7 @@ body {
     display: block;
     margin-top: 50px;
     width: 100%;
-    height: 100%;
+
 }
 
 .piccir {
@@ -85,11 +84,10 @@ body {
 
 .about {
     width: 100%; 
-    height: 100%;
     margin-top: 100px;
     position: relative;
     content: "";
-    display: table;
+    display: inline-table;
     clear: both;
 
 }
@@ -116,6 +114,7 @@ body {
 .foot {
     background-color: #29272b;
     display: inline-block;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
