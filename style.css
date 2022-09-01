@@ -3,8 +3,8 @@ html body {
     padding: 0;
     height: 100%;
     position: relative;
-    background-color: #363537;
-    font-family: 'Nunito';
+    background-color: #ffffff;
+    font-family: 'Inconsolata';
     box-sizing: border-box;
     display: block;
 }
@@ -14,16 +14,15 @@ html body {
 .navbar {
     top: 0px;
     padding-top: 15px;
-    background-color: #29272b;
+    background-color: #ffffff;
     position: sticky;
-    color: #E0E2DB;
     width: 100%;
     height: 50px;
     z-index: 1;
 }
 
 .navbar a {
-    color: #E0E2DB;
+    color: #000000;
     display: relative;
     font-size: 20px;
     padding: 10px;
@@ -33,9 +32,10 @@ html body {
 
 /*Quote*/
 .quote {
-    font-style: italic;
-    color: #E0E2DB;
+    color: #000000;
+    font-family: "Bitter";
     text-align: center;
+    font-weight: bold;
     font-size: 30px;
 }
 /*End Quote*/
@@ -46,13 +46,14 @@ html body {
     position: relative;
     display: block;
     margin-top: 50px;
+    margin-bottom: 300px;
     width: 100%;
 
 }
 
 .piccir {
     display: block;
-    background-color: #004D66;
+    background-color: rgba(249, 87, 0, 0.795);
     border-radius: 500px;
     text-align: center;
     width: 400px;
@@ -84,12 +85,11 @@ html body {
 
 .about {
     width: 100%; 
-    margin-top: 100px;
+    height: 500px;
     position: relative;
     content: "";
-    display: inline-table;
+    display: inline-block;
     clear: both;
-
 }
 
 /*text*/
@@ -97,12 +97,32 @@ html body {
     height: 100%;
     padding-left: 300px;
     padding-right: 300px;
+    display: none;
     position: relative;
     float: left;
 }
 
 .text p{
-    color: #E0E2DB;
+    color: #000000;
+    text-align: center;
+    bottom: 200px;
+    line-height: 35px;
+    font-size: larger;
+}
+
+.showText {
+    height: 100%;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: block;
+    position: relative;
+    float: left;
+    animation-name: fadein;
+    animation-duration: .75s;
+}
+
+.showText p{
+    color: #000000;
     text-align: center;
     bottom: 200px;
     line-height: 35px;
@@ -186,5 +206,19 @@ html body {
         opacity: 1;
         width: 300px;
         height: 300px;
+    }
+}
+
+/* About */
+
+@keyframes fadein {
+    0%{
+        transform: scale(0,0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
     }
 }
