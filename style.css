@@ -118,7 +118,7 @@ html body {
     position: relative;
     float: left;
     animation-name: fadein;
-    animation-duration: .75s;
+    animation-duration: .65s;
 }
 
 .showText p{
