@@ -11,7 +11,7 @@ $(document).ready(function(){      //this is going to put some of school to the 
 
     if(htmlH > htmlW) {
         $(".piccon").css({"margin-bottom": "200px"});
-        $(".about").css({"margin-bottom": "385px"})
+        $(".about").css({"margin-bottom": "385px"});
         text.addClass("showText");
     }
 
@@ -20,7 +20,7 @@ $(document).ready(function(){      //this is going to put some of school to the 
         $(".piccon").css({"margin-bottom":"300px"});
         $(window).scroll(function () {
             var winpos = $(window).scrollTop();
-            if (winpos >= (pos.top - 650)) {
+            if (winpos >= (pos.top - 400)) {
                 text.addClass("showText");
             }
             //This starts a function when the about portion of the website is ready
